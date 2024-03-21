@@ -16,6 +16,7 @@ const styles = StyleSheet.create({
   },
   safeAreaView: {
     flex: 1, // Asegura que SafeAreaView utilice toda la pantalla disponible
+    width: '100%',
   },
 });
 
