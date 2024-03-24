@@ -10,6 +10,11 @@ type AnimalProps = {
 };
 
 const Animal = (props: AnimalProps) => {
+  /* 
+  useState(false) initializes showAge to false. When setShowAge is called 
+  with a new value, the component will re-render, and showAge will be equal to the new value.
+  setShowAge lets us change the value of showAge, which will cause the component to re-render.
+  */
   const [showAge, setShowAge] = useState(false);
 
   return (
@@ -24,7 +29,7 @@ const Animal = (props: AnimalProps) => {
         <Text style={styles.noImageText}>No image available</Text>
       )}
       <TouchableOpacity
-        onPress={() => props.onTalkPress(props.sound ?? '')}
+        onPress={() => props.onTalkPress(props.sound ?? '')} // If sound is undefined, pass an empty string
         style={styles.button}
       >
         <Text style={styles.buttonText}>Talk</Text>
