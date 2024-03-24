@@ -39,23 +39,23 @@ const squareStyle = StyleSheet.create({
     },
     upperContainer1: {
         flex: 1,
-        flexDirection: "row",
-        justifyContent: "flex-start",
-        alignItems: "flex-end",
+        flexDirection: "row",           //The main axis is horizontal X
+        justifyContent: "flex-start",   //Axis X
+        alignItems: "flex-end",         //Axis Y
         backgroundColor: "rgb(236, 186, 179)",
     },
     upperContainer2: {
         flex: 1,
-        flexDirection: "row",
-        justifyContent: "center",
-        alignItems: "center",
+        flexDirection: "row",           //The main axis is horizontal X
+        justifyContent: "center",       //Axis X
+        alignItems: "center",           //Axis Y
         backgroundColor: "rgb(220, 119, 104)",
     },
     upperContainer3: {
         flex: 1,
-        flexDirection: "row",
-        justifyContent: "flex-end",
-        alignItems: "flex-start",
+        flexDirection: "row",           //The main axis is horizontal X
+        justifyContent: "flex-end",     //Axis X
+        alignItems: "flex-start",       //Axis Y
         backgroundColor: "rgb(185, 76, 60)",
     },
     upperCircle: {
@@ -66,27 +66,27 @@ const squareStyle = StyleSheet.create({
     },
     lowerContainer: {
         flex: 1,
-        flexDirection: "row",
+        flexDirection: "row",           //The main axis is horizontal X
     },
     lowerContainer1: {
         flex: 2,
-        flexDirection: "column",
-        justifyContent: "flex-start",
-        alignItems: "flex-end",
+        flexDirection: "column",        //The main axis is vertical Y
+        justifyContent: "flex-start",   //Axis Y
+        alignItems: "flex-end",         //Axis X
         backgroundColor: "rgb(182, 213, 238)",
     },
     lowerContainer2: {
         flex: 1,
-        flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center",
+        flexDirection: "column",        //The main axis is vertical Y   
+        justifyContent: "center",       //Axis Y
+    alignItems: "center",               //Axis X
         backgroundColor: "rgb(113, 171, 221)",
     },
     lowerContainer3: {
         flex: 2,
-        flexDirection: "column",
-        justifyContent: "flex-end",
-        alignItems: "flex-start",
+        flexDirection: "column",        //The main axis is vertical Y
+        justifyContent: "flex-end",     //Axis Y
+        alignItems: "flex-start",       //Axis X
         backgroundColor: "rgb(72, 132, 188)",
     },
     lowerCircle: {
