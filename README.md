@@ -15,6 +15,6 @@
 
 ## Projects
 
-[Exercise 1](Exercise 1.md)
+[Exercise 1](Exercise_1.md)
 
-[Exercise 2](Exercise 2.md)
+[Exercise 2](Exercise_2.md)
