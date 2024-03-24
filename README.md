@@ -12,3 +12,9 @@
 1. Open a new terminal and go inside any project you want to run
 2. Type this command into a the terminal `npm install expo`
 3. Run the app with `npx expo start`
+
+## Projects
+
+[Exercise 1](Exercise 1.md)
+
+[Exercise 2](Exercise 2.md)
