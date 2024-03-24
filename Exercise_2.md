@@ -29,12 +29,12 @@ This time we work with layout and flexbox.
 
 ## Exercise 1
 
-![1711317005915](image/Exercise2/1711317005915.png)
+<img src="image/Exercise2/1711317005915.png" width="300">
 
 ## Exercise 2
 
-![1711316942762](image/Exercise2/1711316942762.png)
+<img src="image/Exercise2/1711316942762.png" width="300">
 
 ## Exercise 3
 
-![1711316970816](image/Exercise2/1711316970816.png)
+<img src="image/Exercise2/1711316970816.png" width="300">
