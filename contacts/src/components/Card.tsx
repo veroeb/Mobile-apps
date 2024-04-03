@@ -12,7 +12,7 @@ const Card = (props: CardProps) => {
     return (
         <View style={styles.card}>
             <View style={styles.image}>
-                <Image source={{ uri: props.image }} style={{width:50, height:50}}/>
+                <Image source={{ uri: props.image }} style={{width:40, height:40}}/>
             </View>
             <View style={styles.details}>
                 <Text>Name: {props.name}</Text>
@@ -31,14 +31,15 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         borderColor: 'black',
         borderRadius: 10,
+        alignItems: 'center',
     },
     image: {
-        // flex: 1,
-        height: 50,
-        width: 50,
+        flex: 1,
+        alignItems: 'center',
     },
     details: {
-
+        flex: 4,
+        paddingLeft: 10,
     } 
 });
 
