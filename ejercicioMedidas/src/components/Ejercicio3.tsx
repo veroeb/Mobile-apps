@@ -79,7 +79,7 @@ const squareStyle = StyleSheet.create({
         flex: 1,
         flexDirection: "column",        //The main axis is vertical Y   
         justifyContent: "center",       //Axis Y
-    alignItems: "center",               //Axis X
+        alignItems: "center",           //Axis X
         backgroundColor: "rgb(113, 171, 221)",
     },
     lowerContainer3: {
