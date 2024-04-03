@@ -18,3 +18,5 @@
 [Exercise 1](Exercise_1.md)
 
 [Exercise 2](Exercise_2.md)
+
+[Contacts](Contacts.md)
