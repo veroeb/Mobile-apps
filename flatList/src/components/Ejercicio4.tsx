@@ -1,14 +1,16 @@
 import React, { useState } from 'react';
 import { StyleSheet, TextInput, Button, TouchableOpacity, View, Text, FlatList, SafeAreaView } from 'react-native';
 
-const Ejercicio3 = () => {
+const Ejercicio4 = () => {
     const [inputText, setInputText] = useState('');
     const [items, setItems] = useState<string[]>([]);
+    const [count, setCount] = useState(0);
 
     const handleSubmit = () => {
         if (inputText.trim() !== '') {
             setItems(prevItems => [...prevItems, inputText]);
             setInputText('');
+            setCount(inputText.length + count);
         }
     };
 
@@ -28,6 +30,7 @@ const Ejercicio3 = () => {
                 data={items}
                 renderItem={({ item }) => <Text style={styles.item}>{item}</Text>}
             />
+            <Text style={styles.countText}>Cantidad de caracteres: {count}</Text>            
         </SafeAreaView>
     );
 };
@@ -53,8 +56,10 @@ const styles = StyleSheet.create({
         fontSize: 20,
     },
     countText: {
-        fontSize: 48,
-        marginVertical: 20,
+        fontSize: 20,
+        marginHorizontal: 20,
+        marginTop: 10,
+        // backgroundColor: "rgba(0,0,0,0.1)",
     },
     item: {
         alignSelf: 'center',
@@ -63,4 +68,4 @@ const styles = StyleSheet.create({
       },
 });
 
-export default Ejercicio3;
+export default Ejercicio4;
