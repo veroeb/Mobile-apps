@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, Image, StyleSheet } from "react-native";
 
-type CardProps = {
+interface CardProps {
     name: string;
     age: number;
     gender: string;   
