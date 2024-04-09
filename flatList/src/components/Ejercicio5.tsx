@@ -4,22 +4,27 @@ import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 const Ejercicio5 = () => {
   const [count, setCount] = useState(21);
 
-  const increaseCount = () => setCount(prevCount => prevCount + 1);
-  const decreaseCount = () => setCount(prevCount => prevCount - 1);
-
   const handleTemperatureHigh = () => {
-    if (count >= 28){
-        alert('Temperature is too high')
+  setCount(prevCount => {
+    console.log(prevCount);
+    if (prevCount >= 28) {
+      alert('Temperature is too high');
+      return prevCount; // No se actualiza el estado
     }
-    setCount(count + 1);
-  };
+    return prevCount + 1; // Se actualiza el estado
+  });
+};
 
-  const handleTemperatureLow = () => {
-    if (count <= 16){
-        alert('Temperature is too low')
+const handleTemperatureLow = () => {
+  setCount(prevCount => {
+    console.log(prevCount);
+    if (prevCount <= 16) {
+      alert('Temperature is too low');
+      return prevCount; // No se actualiza el estado
     }
-    setCount(count - 1);
-  };
+    return prevCount - 1; // Se actualiza el estado
+  });
+};
 
   return (
     <View style={styles.container}>
