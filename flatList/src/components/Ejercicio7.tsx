@@ -34,6 +34,14 @@ const Ejercicio7 = () => {
                 onPress={handleSubmit}
             />
             <FlatList
+                /*
+                Desestructuración de objetos: Cuando ves ({ item }) en la lista de 
+                parámetros de la función renderItem, esto es una desestructuración 
+                de objetos. La función renderItem recibe un objeto como argumento, 
+                y este objeto tiene una propiedad llamada item. Al poner { item } 
+                en lugar de un nombre de parámetro regular, estás diciendo "toma 
+                el objeto que se pasa como argumento, y dame directamente la propiedad item de ese objeto".
+                */
                 data={items}
                 renderItem={({ item }) =>
                     <Pressable onPress={() => handlePressable(item)}>
