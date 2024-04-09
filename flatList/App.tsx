@@ -5,6 +5,7 @@ import Ejercicio2 from './src/components/Ejercicio2';
 import Ejercicio3 from './src/components/Ejercicio3';
 import Ejercicio4 from './src/components/Ejercicio4';
 import Ejercicio5 from './src/components/Ejercicio5';
+import Ejercicio6 from './src/components/Ejercicio6';
 
 export default function App() {
   return (
@@ -13,7 +14,8 @@ export default function App() {
       {/* <Ejercicio2 /> */}
       {/* <Ejercicio3 /> */}
       {/* <Ejercicio4 /> */}
-      <Ejercicio5 />
+      {/* <Ejercicio5 /> */}
+      <Ejercicio6 />
       {/* <StatusBar style="auto" /> */}
     </View>
   );
